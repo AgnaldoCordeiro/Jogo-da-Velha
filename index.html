@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Jogo da Velha</title>
+</head>
+<body>
+  <header>
+    <h1>Jogo da Velha</h1>
+    <div class="placar">
+      <table>   
+          <thead>
+            <th>Jogador</th>
+            <th>Placar</th>
+          </thead>
+        <tbody>
+          <td>Jogador X </td>
+          <td><label id="ponto-x"> </label></td>
+        </tbody>
+        <tbody>
+          <td>Jogador O</td>
+          <td><label id="ponto-o"> </label></td>
+        </tbody>
+      </table>
+    </div>
+
+  </header> 
+
+  <div>
+    <div class="blocoJogo" id="1" onclick="escolherQuadrado(id)">-</div>
+    <div class="blocoJogo" id="2" onclick="escolherQuadrado(id)">-</div>
+    <div class="blocoJogo" id="3" onclick="escolherQuadrado(id)">-</div>
+  </div>  
+  <div>
+    <div class="blocoJogo" id="4" onclick="escolherQuadrado(id)">-</div>
+    <div class="blocoJogo" id="5" onclick="escolherQuadrado(id)">-</div>
+    <div class="blocoJogo" id="6" onclick="escolherQuadrado(id)">-</div>
+  </div>
+  <div>
+    <div class="blocoJogo" id="7" onclick="escolherQuadrado(id)">-</div>
+    <div class="blocoJogo" id="8" onclick="escolherQuadrado(id)">-</div>
+    <div class="blocoJogo" id="9" onclick="escolherQuadrado(id)">-</div>
+  </div>  
+    <div class="div-label">
+      <label class="text-label">Jogador: </label>
+      <label class="text-label" id="jogador-selecionado"></label>
+    </div>
+    <div>
+      <label class="text-label">Vencedor: </label>
+      <label class="text-label" id="vencedor-selecionado"> </label>
+    </div>
+  
+  <div class="div-btn">
+    <button class="btn-reiniciar" onclick="reiniciar()">Nova Partida</button>
+    <button class="btn-reiniciar" onclick="novoJogo()">Novo Jogo</button>
+  </div> 
+</body>
+<script src="/script.js"></script>
+</html>

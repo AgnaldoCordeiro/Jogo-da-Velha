@@ -1,0 +1,104 @@
+*{
+  border: 0;
+  padding: 0;
+  margin: 0;
+  
+}
+
+body{ 
+  height: auto;
+  width: 100%; 
+background: rgb(236, 186, 17);
+background: radial-gradient(circle, rgba(236, 186, 17, 1) 0%, rgba(0, 0, 0, 1) 100%);
+color: white;
+
+}
+
+header{
+  display: flex;
+  justify-content: space-between;
+}
+
+
+div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  text-align: center;
+  margin: 2rem;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: 32%;
+}
+
+.placar{
+  display: flex;
+  justify-content: end;
+    padding: 0.1rem;
+
+}
+table{
+    padding: 0.1rem;
+    background: rgba(0, 0, 0, 0);
+    color: white;   
+}
+
+table thead th{
+  display: inline-flex;
+  margin: 0.2rem;
+  padding: 0.2rem;
+  color: rgb(245, 168, 13);
+}
+
+table tbody td {  
+  display: inline-flex;
+  margin: 0.2rem;
+  padding: 0.2rem;
+}
+
+
+
+div .blocoJogo{ 
+  text-align: center;
+  width: 80px;
+  background: white;
+  display: inline-block;
+  font-size: 80px;
+  margin: 5px;
+  cursor: pointer; 
+  
+   
+}
+.blocoJogo:hover{
+  filter: brightness(0.5); 
+
+}
+.div-label{
+  margin-top: 2rem;
+}
+
+.div-btn{
+  margin-top: 2rem;
+}
+
+
+ .btn-reiniciar{
+margin: 0.5rem;
+display: flex;
+padding: 0.9rem;
+color: white;
+border-radius: 2rem;
+background-color: rgb(30, 26, 26);
+transition: filter 0.2s;
+cursor: pointer;
+}
+.btn-reiniciar:hover {
+  filter: brightness(0.8);
+  background-color: rgb(245, 168, 13);
+}
+.text-label{
+  font-weight: bold;
+  font-size: large;
+}
